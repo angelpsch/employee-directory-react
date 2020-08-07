@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Header from "../components/Header";
-import MyTable from "../components/Table";
 import API from "../utils/API";
+import MyTable from "../components/Table";
+
 
 class Home extends Component {
     state = {
@@ -25,15 +26,7 @@ class Home extends Component {
             })
             .catch(err => console.error(err));
     }
-
-    handleFormSubmit = event => {
-        event.preventDefault();
-        
-        this.setState({
-            toDisplay: this.state.users.filter(user => user.name.first.toLowerCase().includes(this.state.search.toLowerCase()) || user.name.last.toLowerCase().includes(this.state.search.toLowerCase()))
-        });
-    }
-
+    
     handleButtonClick = () => {
         if (this.state.sort === "none" || this.state.sort === "down") {
             this.setState({
@@ -47,6 +40,15 @@ class Home extends Component {
             });
         }
     }
+
+    handleFormSubmit = event => {
+        event.preventDefault();
+        
+        this.setState({
+            toDisplay: this.state.users.filter(user => user.name.first.toLowerCase().includes(this.state.search.toLowerCase()) || user.name.last.toLowerCase().includes(this.state.search.toLowerCase()))
+        });
+    }
+
 
     render() {
         return (
