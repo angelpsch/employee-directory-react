@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/employee-directory-react/static/css/main.cd933b91.chunk.css",
+    "main.js": "/employee-directory-react/static/js/main.59428ac0.chunk.js",
+    "main.js.map": "/employee-directory-react/static/js/main.59428ac0.chunk.js.map",
+    "runtime-main.js": "/employee-directory-react/static/js/runtime-main.cb6ddaa7.js",
+    "runtime-main.js.map": "/employee-directory-react/static/js/runtime-main.cb6ddaa7.js.map",
+    "static/css/2.f72387d7.chunk.css": "/employee-directory-react/static/css/2.f72387d7.chunk.css",
+    "static/js/2.b35146e5.chunk.js": "/employee-directory-react/static/js/2.b35146e5.chunk.js",
+    "static/js/2.b35146e5.chunk.js.map": "/employee-directory-react/static/js/2.b35146e5.chunk.js.map",
+    "index.html": "/employee-directory-react/index.html",
+    "precache-manifest.5b7736520dae160c985eed1ce8d1370d.js": "/employee-directory-react/precache-manifest.5b7736520dae160c985eed1ce8d1370d.js",
+    "service-worker.js": "/employee-directory-react/service-worker.js",
+    "static/css/2.f72387d7.chunk.css.map": "/employee-directory-react/static/css/2.f72387d7.chunk.css.map",
+    "static/css/main.cd933b91.chunk.css.map": "/employee-directory-react/static/css/main.cd933b91.chunk.css.map",
+    "static/js/2.b35146e5.chunk.js.LICENSE.txt": "/employee-directory-react/static/js/2.b35146e5.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/employee-directory-react/static/media/roboto-vietnamese-400-normal.a8be5b46.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb6ddaa7.js",
+    "static/css/2.f72387d7.chunk.css",
+    "static/js/2.b35146e5.chunk.js",
+    "static/css/main.cd933b91.chunk.css",
+    "static/js/main.59428ac0.chunk.js"
+  ]
+}
