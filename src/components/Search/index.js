@@ -12,12 +12,12 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-function Search({ handleFormSubmit, handleInputChange, search }) {
+function Search({ handleSubmit, handleInput, search }) {
     const classes = useStyles();
     return (
         <form className={classes.root}>
-            <TextField value={search} variant='outlined' onChange={handleInputChange} id="name" type="text" label="Search By Name"></TextField>
-            <Button variant='contained' onClick={handleFormSubmit} >Search</Button>
+            <TextField value={search} variant='outlined' onChange={handleInput} id="name" type="text" label="Search By Name"></TextField>
+            <Button variant='contained' onClick={handleSubmit} >Search</Button>
         </form>
     );
 }

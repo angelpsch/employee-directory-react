@@ -29,12 +29,12 @@ const StyledTableCell = withStyles((theme) => ({
 
   
 
-function Labels({ handleButtonClick }) {
+function Labels({ handleClick }) {
     return (
         <StyledTableRow>
             <StyledTableCell align='right'>Name</StyledTableCell>
             <StyledTableCell align='right'>       
-                    <Button onClick={handleButtonClick}>            
+                    <Button onClick={handleClick}>            
                     Sort by Length of Employment <FilterListIcon />
                     </Button>
      

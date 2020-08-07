@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MyTable({ toDisplay, handleFormSubmit, handleInputChange, handleButtonClick }) {
+export default function MyTable({ toDisplay, handleSubmit, handleInput, handleClick }) {
   const classes = useStyles();
 
   return (
@@ -27,10 +27,10 @@ export default function MyTable({ toDisplay, handleFormSubmit, handleInputChange
         <TableHead>
           <TableRow>
           <TableCell>
-           <Search handleFormSubmit={handleFormSubmit} handleInputChange={handleInputChange}></Search>
+           <Search handleSubmit={handleSubmit} handleInput={handleInput}></Search>
            </TableCell>
             <TableCell>
-               <Labels handleButtonClick={handleButtonClick}/>
+               <Labels handleClick={handleClick}/>
             </TableCell>
            
           </TableRow>

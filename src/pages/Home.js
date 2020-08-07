@@ -12,7 +12,7 @@ class Home extends Component {
         sort: "none"
     };
 
-    handleInputChange = event => {
+    handleInput = event => {
       this.setState({ search: event.target.value });
     };
 
@@ -27,7 +27,7 @@ class Home extends Component {
             .catch(err => console.error(err));
     }
     
-    handleButtonClick = () => {
+    handleClick = () => {
         if (this.state.sort === "none" || this.state.sort === "down") {
             this.setState({
                 sort: "up",
@@ -41,7 +41,7 @@ class Home extends Component {
         }
     }
 
-    handleFormSubmit = event => {
+    handleSubmit = event => {
         event.preventDefault();
         
         this.setState({
@@ -54,7 +54,7 @@ class Home extends Component {
         return (
             <div>
                 <Header />
-                <MyTable toDisplay={this.state.toDisplay} handleFormSubmit={this.handleFormSubmit} handleInputChange={this.handleInputChange} handleButtonClick={this.handleButtonClick} />
+                <MyTable toDisplay={this.state.toDisplay} handleSubmit={this.handleSubmit} handleInput={this.handleInput} handleClick={this.handleClick} />
             </div>
         );
     }
